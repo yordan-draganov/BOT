@@ -1,2 +1,2 @@
 # BOT
-Repo for BOT for homework
+Repo for BOT homework
