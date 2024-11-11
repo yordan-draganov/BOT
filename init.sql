@@ -1,6 +1,7 @@
-CREATE TABLE test_table (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(50)
+CREATE TABLE IF NOT EXISTS game_sessions (
+    id SERIAL PRIMARY KEY,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    result VARCHAR(50),
+    reels INTEGER[],
+    spins INTEGER
 );
-
-INSERT INTO test_table (name) VALUES ('Sample Data');
